@@ -1,4 +1,5 @@
 const data = [{
+  "image": "profile1.png",
   "id": "E1002",
   "firstName": "John",
   "lastName": "Smith",
@@ -11,7 +12,8 @@ const data = [{
   "onLeave": false
 },
 
-{
+  {
+  "image": "profile2.png",
   "id": "E1003",
   "firstName": "Lisa",
   "lastName": "White",
@@ -24,7 +26,8 @@ const data = [{
   "onLeave": false
 },
 
-{
+  {
+  "image": "profile3.png",
   "id": "E1004",
   "firstName": "Mark",
   "lastName": "Brown",
