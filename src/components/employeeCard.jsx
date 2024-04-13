@@ -22,7 +22,7 @@ export default function MediaCard() {
             backgroundSize: "contain",
             margin: "auto",
           }}
-          image="profile3.png"
+          image="/employee-dashboard-react-app-m02/profile3.png"
           title="profile image"
         />
       </Box>
