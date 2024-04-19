@@ -11,7 +11,8 @@ import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 
 
-export default function MediaCard() {
+export default function MediaCard({ data }) {
+  console.log(data);
   return (
     <Card sx={{ maxWidth: 345, padding: 2 }}>
       <Box>
@@ -22,7 +23,7 @@ export default function MediaCard() {
             backgroundSize: "contain",
             margin: "auto",
           }}
-          image="/employee-dashboard-react-app-m02/profile3.png"
+          image={`/employee-dashboard-react-app-m02/${data[0].image}`}
           title="profile image"
         />
       </Box>
@@ -30,22 +31,22 @@ export default function MediaCard() {
       <CardContent>
         <EmojiNatureIcon />
         <Typography gutterBottom variant="h5" component="div">
-          John Smith
+          {data[0].firstName} {data[0].lastName}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Deparment: UX/UI Design
+          Deparment: {data[0].department}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Position: UI Designer
+          Position: {data[0].position}
         </Typography>
         <Stack
           direction="row"
           spacing={1}
           sx={{ marginTop: 2, justifyContent: "center" }}
         >
-          <Chip label="figma" />
-          <Chip label="Adobe XD" />
-          <Chip label="Sketch" />
+          <Chip label={data[0].skills[0]} />
+          <Chip label={data[0].skills[0]} />
+          <Chip label={data[0].skills[0]} />
         </Stack>
       </CardContent>
       <Stack direction="row" spacing={1} sx={{ justifyContent: "center" }}>

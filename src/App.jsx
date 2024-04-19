@@ -13,7 +13,7 @@ function App() {
   console.log(Data);
   return (
     <Container fixed>
-      <MediaCard />
+      <MediaCard data={Data} />
     </Container>
   );
 }
