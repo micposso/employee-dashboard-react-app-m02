@@ -24,7 +24,7 @@ const data = [
     employmentType: "Remote",
     skills: ["SEO", "Content Marketing", "Google Analytics"],
     hoursLoggedThisWeek: 35,
-    onLeave: false,
+    onLeave: true,
   },
 
   {
